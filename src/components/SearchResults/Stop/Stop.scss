@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+.stop-item{
+  margin: 5px auto;
+  height: 110px;
+  min-height: 110px;
+  max-height: 110px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #fff;
+  .name{
+    font-size: 17px;
+  }
+  .marker-image{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .stop-item-details{
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 10px 5px;
+  }
+}
+
+.shadow{
+  box-shadow: 0 0 1px 0 hsla(0,0%,0%,0.2);
+}
+
+/*
+
+##Device = Most of the Smart phones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}
