@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="Src/SearchResults/Stop/Stop.tsx, Stop.scss&#10;created Stop component to display each stop item as a stateless component">
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/actions/location.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/actions/stop.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Stop/location-marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Stop/marker.jpg" afterDir="false" />
+    <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/__tests__/seed/testLocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/seed/testStops.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/components/Header.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Header.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/components/Home.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Home.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/components/Loader.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Loader.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/components/Message.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Message.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/components/Stop.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/Stop.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Typescript JSX File " />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+        <option value="Typescript JSX File " />
       </list>
     </option>
   </component>
@@ -54,6 +57,12 @@
         <option value="$PROJECT_DIR$/src/components/SearchResults/Stop/Stop.tsx" />
         <option value="$PROJECT_DIR$/src/components/SearchResults/Stop/Stop.scss" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/Stop.test.vue" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/Header.test.tsx" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/Loader.test.tsx" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/Message.test.tsx" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/Stop.test.tsx" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/Home.test.tsx" />
       </list>
     </option>
   </component>
@@ -95,12 +104,6 @@
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -118,11 +121,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/__tests__/actions" />
-      <recent name="$PROJECT_DIR$/src/components/SearchResults/Stop" />
-      <recent name="$PROJECT_DIR$/src/components/_App/partials" />
-      <recent name="$PROJECT_DIR$/src/components/_App/partials/Message" />
-      <recent name="$PROJECT_DIR$/src/components/_App/partials/Loader" />
+      <recent name="$PROJECT_DIR$/src/__tests__" />
+      <recent name="$PROJECT_DIR$/src/components/Home" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/__tests__/setup" />
+      <recent name="$PROJECT_DIR$/src/__tests__/reducers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -147,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="8966000" />
+      <workItem from="1530878226160" duration="10171000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -240,11 +243,46 @@
       <option name="project" value="LOCAL" />
       <updated>1530890965976</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Src/__tests__/actions/location.tsx, location.tsx&#10;Setup basic test files for action creators">
+      <created>1530892073656</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530892073656</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Src/__tests__/reducers/location.tsx, location.tsx&#10;Setup basic test files for reducers">
+      <created>1530892165041</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1530892165041</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Src/__tests__/setup/setupEnzyme.ts, location.tsx&#10;Setup test entry file for enzyme setups">
+      <created>1530892303276</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1530892303276</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Src/jest.config.js&#10;Setup jest config file for unit tests">
+      <created>1530892723403</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1530892723403</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Src/__tests__/components&#10;Created test files for components">
+      <created>1530893051752</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1530893051752</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8966000" />
+    <option name="totallyTimeSpent" value="10171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -293,7 +331,12 @@
     <MESSAGE value="Src/components/Home/Home.tsx, Home.scss&#10;created landed home screen for users' location search" />
     <MESSAGE value="Src/graphql/stop.tsx&#10;created graphql query to fetch stops from API endpoint" />
     <MESSAGE value="Src/SearchResults/Stop/Stop.tsx, Stop.scss&#10;created Stop component to display each stop item as a stateless component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Src/SearchResults/Stop/Stop.tsx, Stop.scss&#10;created Stop component to display each stop item as a stateless component" />
+    <MESSAGE value="Src/__tests__/actions/location.tsx, location.tsx&#10;Setup basic test files for action creators" />
+    <MESSAGE value="Src/__tests__/reducers/location.tsx, location.tsx&#10;Setup basic test files for reducers" />
+    <MESSAGE value="Src/__tests__/setup/setupEnzyme.ts, location.tsx&#10;Setup test entry file for enzyme setups" />
+    <MESSAGE value="Src/jest.config.js&#10;Setup jest config file for unit tests" />
+    <MESSAGE value="Src/__tests__/components&#10;Created test files for components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Src/__tests__/components&#10;Created test files for components" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -329,12 +372,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.tsx">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphql/graphql.tsx">
       <provider selected="true" editor-type-id="text-editor" />
@@ -377,6 +414,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Loader.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Message.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Stop.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Header.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Home.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
