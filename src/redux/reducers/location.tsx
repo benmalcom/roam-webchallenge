@@ -8,14 +8,14 @@ interface LocationAction extends Action {
 
 interface Location {
 	bbox: number[];
-	features: {
+	features: Array<{
 		geometry: {
 			type: string;
 			coordinates: number[];
 		};
 		properties: object;
 		type: string;
-	}[];
+	}>;
 	geocoding: object;
 	type: string;
 }
