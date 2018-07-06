@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.tsx" afterDir="false" />
+    <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="Src/SearchResults/Stop/Stop.tsx, Stop.scss&#10;created Stop component to display each stop item as a stateless component">
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/actions/location.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/actions/stop.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Stop/location-marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Stop/marker.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Typescript JSX File " />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -42,8 +47,13 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/tslint.json" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/redux/middlewares/request.tsx" />
+        <option value="$PROJECT_DIR$/src/graphql/graphql.tsx" />
+        <option value="$PROJECT_DIR$/src/graphql/stop.tsx" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/components/SearchResults/Stop/Stop.tsx" />
+        <option value="$PROJECT_DIR$/src/components/SearchResults/Stop/Stop.scss" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -89,14 +99,7 @@
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -111,14 +114,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/__tests__/actions" />
+      <recent name="$PROJECT_DIR$/src/components/SearchResults/Stop" />
       <recent name="$PROJECT_DIR$/src/components/_App/partials" />
       <recent name="$PROJECT_DIR$/src/components/_App/partials/Message" />
       <recent name="$PROJECT_DIR$/src/components/_App/partials/Loader" />
-      <recent name="$PROJECT_DIR$/src/components/_App/partials/Header" />
-      <recent name="$PROJECT_DIR$/src/components/_App" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="6773000" />
+      <workItem from="1530878226160" duration="8966000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -215,18 +219,39 @@
       <option name="project" value="LOCAL" />
       <updated>1530886607841</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Src/components/Home/Home.tsx, Home.scss&#10;created landed home screen for users' location search">
+      <created>1530888605448</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1530888605448</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Src/graphql/stop.tsx&#10;created graphql query to fetch stops from API endpoint">
+      <created>1530890702785</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1530890702785</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Src/SearchResults/Stop/Stop.tsx, Stop.scss&#10;created Stop component to display each stop item as a stateless component">
+      <created>1530890965976</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1530890965976</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6773000" />
+    <option name="totallyTimeSpent" value="8966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="right" id="Mongo Explorer" />
       <window_info anchor="bottom" id="Terminal" weight="0.32941177" />
@@ -265,7 +290,10 @@
     <MESSAGE value="Redux/Middlewares/location.tsx, Redux/Middlewares/location.tsx&#10;created redux middlewares to intercept HTTP request middlewares" />
     <MESSAGE value="Redux/components/_App/App.tsx,App.scss&#10;created the App component to bootstrap search and seach results page routing" />
     <MESSAGE value="Src/components/_App/&#10;created static partial components to be used among app components (Loader, Message, Header)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Src/components/_App/&#10;created static partial components to be used among app components (Loader, Message, Header)" />
+    <MESSAGE value="Src/components/Home/Home.tsx, Home.scss&#10;created landed home screen for users' location search" />
+    <MESSAGE value="Src/graphql/stop.tsx&#10;created graphql query to fetch stops from API endpoint" />
+    <MESSAGE value="Src/SearchResults/Stop/Stop.tsx, Stop.scss&#10;created Stop component to display each stop item as a stateless component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Src/SearchResults/Stop/Stop.tsx, Stop.scss&#10;created Stop component to display each stop item as a stateless component" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -279,13 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -314,6 +335,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.tsx">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphql/graphql.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphql/stop.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/Stop/Stop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1580">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/Stop/Stop.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
