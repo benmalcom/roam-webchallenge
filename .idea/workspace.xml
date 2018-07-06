@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/location.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/request.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/stop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/ui.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Typescript JSX File " />
       </list>
     </option>
   </component>
@@ -78,6 +81,17 @@
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -90,9 +104,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux/actions" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -118,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="1926000" />
+      <workItem from="1530878226160" duration="3849000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -134,11 +150,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530880985632</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Code quaity&#10;Created tslint/config file with necessary configurations for react-typescript">
+      <created>1530881605153</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530881605153</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bootstrap&#10;Created index files for project bootstrap">
+      <created>1530883500901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1530883500901</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1926000" />
+    <option name="totallyTimeSpent" value="3849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -151,6 +181,7 @@
       <window_info anchor="bottom" id="Terminal" weight="0.32941177" />
       <window_info anchor="bottom" id="RNConsole" />
       <window_info anchor="right" id="Api Debugger" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="ReST Console" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -175,7 +206,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup" />
     <MESSAGE value="Build&#10;Created webpack config file with necessary configurations for react-typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build&#10;Created webpack config file with necessary configurations for react-typescript" />
+    <MESSAGE value="Code quaity&#10;Created tslint/config file with necessary configurations for react-typescript" />
+    <MESSAGE value="Bootstrap&#10;Created index files for project bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap&#10;Created index files for project bootstrap" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -205,6 +238,9 @@
           <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
