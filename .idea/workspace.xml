@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Header/Header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cache.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cache.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,13 +23,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SearchResults.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchResults.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-157">
               <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/redux/reducers/location.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stop.test.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location.test.tsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,13 +125,14 @@
         <option value="$PROJECT_DIR$/src/__tests__/seed/utils.js" />
         <option value="$PROJECT_DIR$/src/__tests__/seed/utils.ts" />
         <option value="$PROJECT_DIR$/src/__tests__/reducers/ui.test.tsx" />
-        <option value="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" />
-        <option value="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" />
         <option value="$PROJECT_DIR$/jest.config.js" />
         <option value="$PROJECT_DIR$/src/cache.service.js" />
         <option value="$PROJECT_DIR$/src/components/SearchResults/Header/Header.scss" />
         <option value="$PROJECT_DIR$/src/components/SearchResults/Header/Header.tsx" />
         <option value="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/location.tsx" />
+        <option value="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" />
+        <option value="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" />
       </list>
     </option>
   </component>
@@ -151,22 +183,14 @@
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchResults" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchResults" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,7 +260,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="15791000" />
+      <workItem from="1530878226160" duration="16027000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -386,7 +410,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15791000" />
+    <option name="totallyTimeSpent" value="16027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -640,26 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jest.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -696,6 +700,33 @@
           <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/location.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>

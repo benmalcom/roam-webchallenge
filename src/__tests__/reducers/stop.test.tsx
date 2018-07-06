@@ -34,7 +34,7 @@ describe('stops reducer', () => {
 	it('should handle GET_STOPS_FAILURE', () => {
 		expect(reducer(defaultState, {
 			type: actions.GET_STOPS_FAILURE,
-			payload: new Error('error')}))
+			payload: error}))
 			.toEqual(
 				{
 					stops: null, error,

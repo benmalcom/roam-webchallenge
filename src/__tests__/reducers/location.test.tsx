@@ -22,7 +22,7 @@ describe('location reducer', () => {
 	it('should handle GET_LOCATION_FAILURE', () => {
 		expect(reducer(defaultState, {
 			type: actions.GET_LOCATION_FAILURE,
-			payload: new Error('error')}))
+			payload: error}))
 			.toEqual(
 			{
 				location: null, error,
