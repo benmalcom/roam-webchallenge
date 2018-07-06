@@ -1,4 +1,10 @@
 version: 2
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: roam-webchallenge
+
 jobs:
   build:
     docker:
@@ -25,10 +31,7 @@ jobs:
             ./cc-test-reporter before-build
             npm test -- --coverage
             ./cc-test-reporter after-build --exit-code $?
-      - run:
-          name: Deploy to Heroku
-          command: |
-            git push heroku master
+
 
 
 
