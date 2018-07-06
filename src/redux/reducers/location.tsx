@@ -8,14 +8,14 @@ interface LocationAction extends Action {
 
 interface Location {
 	bbox: number[];
-	features: Array<{
+	features: {
 		geometry: {
 			type: string;
 			coordinates: number[];
 		};
 		properties: object;
 		type: string;
-	}>;
+	}[];
 	geocoding: object;
 	type: string;
 }
@@ -25,7 +25,7 @@ const locationReducer = (state = {location: null, error: null}, action: Location
 		case GET_LOCATION_SUCCESS:
 			const {features} = action.payload as Location;
 			if (features && features.length) {
-				const coordinates = features[0].geometry.coordinates;
+				const {geometry: {coordinates}} = features[0];
 				if (typeof localStorage !== "undefined") {
 					new CacheService('location').store(coordinates);
 				}
