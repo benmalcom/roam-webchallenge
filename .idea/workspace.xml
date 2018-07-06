@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,6 +43,7 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/redux/middlewares/request.tsx" />
       </list>
     </option>
   </component>
@@ -86,7 +89,14 @@
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,9 +114,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/redux/reducers" />
-      <recent name="$PROJECT_DIR$/src/redux/actions" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/_App/partials" />
+      <recent name="$PROJECT_DIR$/src/components/_App/partials/Message" />
+      <recent name="$PROJECT_DIR$/src/components/_App/partials/Loader" />
+      <recent name="$PROJECT_DIR$/src/components/_App/partials/Header" />
+      <recent name="$PROJECT_DIR$/src/components/_App" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -131,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="4394000" />
+      <workItem from="1530878226160" duration="6773000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -175,15 +187,42 @@
       <option name="project" value="LOCAL" />
       <updated>1530884509498</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Redux/Middlewares/request.tsx&#10;created redux middleware for sending general HTTP requests">
+      <created>1530884883748</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530884883749</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Redux/Middlewares/location.tsx, Redux/Middlewares/location.tsx&#10;created redux middlewares to intercept HTTP request middlewares">
+      <created>1530885288531</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1530885288531</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Redux/components/_App/App.tsx,App.scss&#10;created the App component to bootstrap search and seach results page routing">
+      <created>1530885686697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1530885686697</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Src/components/_App/&#10;created static partial components to be used among app components (Loader, Message, Header)">
+      <created>1530886607841</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1530886607841</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4394000" />
+    <option name="totallyTimeSpent" value="6773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -222,7 +261,11 @@
     <MESSAGE value="Bootstrap&#10;Created index files for project bootstrap" />
     <MESSAGE value="Redux/Actions&#10;created basic redux actions for stop, location and ui feedback" />
     <MESSAGE value="Redux/Reducers&#10;created basic redux reducers for stop, location and ui feedback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redux/Reducers&#10;created basic redux reducers for stop, location and ui feedback" />
+    <MESSAGE value="Redux/Middlewares/request.tsx&#10;created redux middleware for sending general HTTP requests" />
+    <MESSAGE value="Redux/Middlewares/location.tsx, Redux/Middlewares/location.tsx&#10;created redux middlewares to intercept HTTP request middlewares" />
+    <MESSAGE value="Redux/components/_App/App.tsx,App.scss&#10;created the App component to bootstrap search and seach results page routing" />
+    <MESSAGE value="Src/components/_App/&#10;created static partial components to be used among app components (Loader, Message, Header)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Src/components/_App/&#10;created static partial components to be used among app components (Loader, Message, Header)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -254,6 +297,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/actions.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/middlewares/request.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.tsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
