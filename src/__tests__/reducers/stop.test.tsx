@@ -1,11 +1,12 @@
 import reducer from '../../redux/reducers/stop';
 import * as actions from '../../redux/actions/stop';
+import { error, undefinedAction } from '../seed/utils';
 const testStops = require('../seed/testStops');
 
 describe('stops reducer', () => {
 	const defaultState = {stops: null, error: null};
 	it('should return the initial state', () => {
-		expect(reducer(defaultState, {type: undefined, payload: {}})).toEqual(defaultState);
+		expect(reducer(defaultState, undefinedAction)).toEqual(defaultState);
 	});
 
 	it('should handle GET_STOPS_SUCCESS', () => {
@@ -36,7 +37,7 @@ describe('stops reducer', () => {
 			payload: new Error('error')}))
 			.toEqual(
 				{
-					stops: null, error: new Error('error'),
+					stops: null, error,
 				});
 	});
 });

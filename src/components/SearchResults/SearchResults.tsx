@@ -37,12 +37,6 @@ class SearchResults extends Component<ComponentProps & any, any> {
 	}
 
 	@autobind
-	getPreviousPage(e: MouseEvent<HTMLButtonElement>) {
-		const {pageInfo: {startCursor}} = this.props;
-		this.getStops({cursor: {before: startCursor}});
-	}
-
-	@autobind
 	getNextPage(e: MouseEvent<HTMLButtonElement>) {
 		const {pageInfo: {endCursor}} = this.props;
 		this.getStops({cursor: {after: endCursor}});
@@ -96,8 +90,6 @@ class SearchResults extends Component<ComponentProps & any, any> {
 				{
 					pageInfo &&
 					<p className="col-md-12 mt-5">
-						{pageInfo.hasPreviousPage && <button onClick={this.getPreviousPage}
-															 className="btn btn-sm btn-outline-secondary">Previous Page</button>}
 						{pageInfo.hasNextPage && <button onClick={this.getNextPage}
 														 className="btn btn-sm btn-outline-secondary">Next Page</button>}
 					</p>

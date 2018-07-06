@@ -22,7 +22,8 @@ module.exports = {
 	],
 	testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
 	testPathIgnorePatterns: [
-		'<rootDir>/src/__tests__/setup/'
+		'<rootDir>/src/__tests__/setup/',
+		'<rootDir>/src/__tests__/seed/'
 	],
 	snapshotSerializers: ['enzyme-to-json/serializer'],
 	setupTestFrameworkScriptFile: '<rootDir>/src/__tests__/setup/setupEnzyme.ts',

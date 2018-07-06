@@ -1,7 +1,5 @@
 export const getStopsQuery = (lat: number, long: number, cursor?: (object | null)) => {
 	const queryCursor = cursor ? `${Object.keys(cursor)[0]}:"${Object.values(cursor)[0]}"` : '';
-	console.log('queryCursor ', queryCursor);
-	console.log('cursor ', cursor);
 	return {
 		query: `
 		  {

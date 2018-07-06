@@ -1,25 +1,18 @@
 import reducer from '../../redux/reducers/ui';
 import * as actions from '../../redux/actions/ui';
+import { loading, notLoading, undefinedAction } from '../seed/utils';
 
 describe('ui reducer', () => {
+
 	it('should return the initial state', () => {
-		expect(reducer({loading: false}, {type: undefined})).toEqual(
-			{
-				loading: false,
-			});
+		expect(reducer(notLoading, undefinedAction)).toEqual(notLoading);
 	});
 
 	it('should handle SHOW_LOADER', () => {
-		expect(reducer({loading: false}, {type: actions.SHOW_LOADER})).toEqual(
-			{
-				loading: true,
-			});
+		expect(reducer(loading, {type: actions.SHOW_LOADER})).toEqual(loading);
 	});
 
 	it('should handle HIDE_LOADER', () => {
-		expect(reducer({loading: false}, {type: actions.HIDE_LOADER})).toEqual(
-			{
-				loading: false,
-			});
+		expect(reducer(notLoading, {type: actions.HIDE_LOADER})).toEqual(notLoading);
 	});
 });
