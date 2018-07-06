@@ -1,0 +1,41 @@
+.container{
+    margin-top: 50px;
+}
+.text-xxs {
+    font-size: 9px !important;
+}
+
+.text-xs {
+    font-size: 10px !important;
+}
+
+.text-sm {
+    font-size: 12px !important;
+}
+
+.text-md {
+    font-size: 16px !important;
+}
+
+.text-lg {
+    font-size: 18px !important;
+}
+
+.text-xlg {
+    font-size: 26px !important;
+}
+
+.text-elg {
+    font-size: 32px !important;
+    line-height: 16px;
+}
+
+.text-xxlg {
+    font-size: 40px !important;
+    line-height: 16px;
+}
+
+.wrapper{
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+}
