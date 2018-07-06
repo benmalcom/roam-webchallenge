@@ -38,7 +38,7 @@ CacheService.prototype.removeItem = function () {
 
 // Remove every expired item
 CacheService.prototype.removeExpired = function() {
-	const keys = Object.keys(localStorage).filter((item,key) => item === 'location');
+	const keys = Object.keys(localStorage).filter((item, key) => item === 'location');
 	for(let key of keys) {
 		const json = localStorage.getItem(key);
 		try{

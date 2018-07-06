@@ -43,6 +43,12 @@ class SearchResults extends Component<ComponentProps & any, any> {
 	}
 
 	@autobind
+	getRenderedStops(stops: StopProps[]) {
+		return stops.map(({id, name, desc, distance}) =>
+			<Stop key={uuid()} name={name} desc={desc} distance={distance}/>);
+	}
+
+	@autobind
 	getStops(cursor: (object | null) = null) {
 		const {location, getStops} = this.props;
 		const {cachedLocation} = this;
@@ -59,35 +65,27 @@ class SearchResults extends Component<ComponentProps & any, any> {
 
 	render() {
 		const {location, stops, loading, pageInfo} = this.props;
-		const {cachedLocation} = this;
+		const {cachedLocation, getRenderedStops} = this;
 		let tsx: any = null;
-		if (!location && !cachedLocation) {
+		if (!(location && cachedLocation)) {
 			tsx = <Message
 				message="Sorry we can't get your location information at this time"
 				error={true}/>;
 		} else if ((location || cachedLocation) && loading) {
 			tsx = <Loader/>;
 		} else {
-			if (stops) {
-				tsx = stops.map(({id, name, desc, distance}) =>
-					<Stop key={uuid()} name={name} desc={desc} distance={distance}/>);
-				if (!stops.length) {
-					tsx = <Message
-						message="No result returned for your search"
-						error={true}/>;
-				}
-			}
+				tsx = (stops && stops.length) ? getRenderedStops(stops) :
+					<Message message="No result returned for your search" error={true}/>;
 		}
 
 		return (<div className="row stops-list">
 			<div className="col-md-12 mb-3">
 				<Header/>
 				<hr/>
-				{ pageInfo &&
-					<p className="col-md-12 mt-5">
+				{ pageInfo && <p className="col-md-12 mt-5">
 						{pageInfo.hasNextPage && <button onClick={this.getNextPage}
 														 className="btn btn-sm btn-outline-secondary">Next Page</button>}
-					</p> }
+					</p>}
 			</div>
 			{tsx}
 		</div>);

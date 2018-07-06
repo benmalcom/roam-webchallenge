@@ -1,6 +1,6 @@
 import reducer from '../../redux/reducers/location';
 import * as actions from '../../redux/actions/location';
-import { error, undefinedAction } from '../seed/utils';
+import { error, getErrorPayload, undefinedAction } from '../seed/utils';
 const testLocation = require('../seed/testLocation');
 
 describe('location reducer', () => {
@@ -20,12 +20,7 @@ describe('location reducer', () => {
 	});
 
 	it('should handle GET_LOCATION_FAILURE', () => {
-		expect(reducer(defaultState, {
-			type: actions.GET_LOCATION_FAILURE,
-			payload: error}))
-			.toEqual(
-			{
-				location: null, error,
-			});
+		expect(reducer(defaultState, getErrorPayload(actions.GET_LOCATION_FAILURE) ))
+			.toEqual({ location: null, error });
 	});
 });

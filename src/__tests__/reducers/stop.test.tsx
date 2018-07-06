@@ -1,6 +1,6 @@
 import reducer from '../../redux/reducers/stop';
 import * as actions from '../../redux/actions/stop';
-import { error, undefinedAction } from '../seed/utils';
+import { error, getErrorPayload, undefinedAction } from '../seed/utils';
 const testStops = require('../seed/testStops');
 
 describe('stops reducer', () => {
@@ -10,9 +10,7 @@ describe('stops reducer', () => {
 	});
 
 	it('should handle GET_STOPS_SUCCESS', () => {
-		expect(reducer(defaultState, {
-			type: actions.GET_STOPS_SUCCESS,
-			payload: testStops}))
+		expect(reducer(defaultState, {type: actions.GET_STOPS_SUCCESS, payload: testStops}))
 			.toEqual(
 				{
 					stops: [{
@@ -32,12 +30,7 @@ describe('stops reducer', () => {
 	});
 
 	it('should handle GET_STOPS_FAILURE', () => {
-		expect(reducer(defaultState, {
-			type: actions.GET_STOPS_FAILURE,
-			payload: error}))
-			.toEqual(
-				{
-					stops: null, error,
-				});
+		expect(reducer(defaultState, getErrorPayload(actions.GET_STOPS_FAILURE)))
+			.toEqual({ stops: null, error });
 	});
 });
