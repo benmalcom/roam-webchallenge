@@ -25,3 +25,9 @@ jobs:
             ./cc-test-reporter before-build
             npm test -- --coverage
             ./cc-test-reporter after-build --exit-code $?
+
+  deployment:
+    staging:
+      branch: master
+      heroku:
+        appname: roam-webchallenge
