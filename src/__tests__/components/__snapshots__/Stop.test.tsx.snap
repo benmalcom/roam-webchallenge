@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Stop /> Component renders properly with props 1`] = `
+<Component
+  desc="This is the description"
+  distance={112}
+  name="A new location"
+>
+  <div
+    className="col-lg-4 col-md-4 col-sm-6 col-12"
+  >
+    <div
+      className="row stop-item shadow"
+    >
+      <div
+        className="col-md-4 col-4 full-height full-width p-0"
+      >
+        <img
+          className="marker-image"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </div>
+      <div
+        className="col-md-8 col-8 pt-30 stop-item-details"
+      >
+        <div
+          className="mr-auto text-left"
+        >
+          <h6
+            className="mb-1 mt-1"
+          >
+            <strong
+              className="name"
+            >
+              A new location
+            </strong>
+          </h6>
+          <h6
+            className="text-sm text-muted"
+          >
+            This is the description
+          </h6>
+          <label
+            className="badge badge-info text-xs"
+          >
+            <i
+              className="fa fa-car"
+            />
+             
+            112
+             meters away
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</Component>
+`;

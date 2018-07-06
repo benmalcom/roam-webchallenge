@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
 // Import general css dependencies
 import 'bootstrap/scss/bootstrap.scss';
@@ -18,6 +18,7 @@ const App = () => (
 				<Switch>
 					<Route exact={true} path={'/'} component={Home}/>
 					<Route path={'/search-results'} component={SearchResults}/>
+					<Redirect to={'/'}/>
 				</Switch>
 		</div>
 	</Aux>

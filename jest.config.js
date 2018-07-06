@@ -3,9 +3,6 @@ module.exports = {
 	roots: [
 		'<rootDir>/src'
 	],
-	/*	setupFiles: [
-			'<rootDir>/__tests__/setup/shim.js'
-		],*/
 	moduleNameMapper: {
 		'\\.(css|scss|jpg|png|svg)$': '<rootDir>/node_modules/jest-css-modules'
 	},

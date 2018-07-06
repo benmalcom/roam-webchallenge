@@ -64,3 +64,4 @@ typings/
 
 # ignore local build directory
 /build
+/src/__tests__/components/__snapshits__

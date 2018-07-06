@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Message /> Component renders properly with props 1`] = `
+<Component
+  error={false}
+  message="message"
+>
+  <div
+    className="message mx-2 col-md-8 text-center text-muted alert alert-info"
+  >
+    message
+  </div>
+</Component>
+`;

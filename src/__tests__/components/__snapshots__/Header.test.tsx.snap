@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Component renders properly 1`] = `
+<nav
+  className="navbar navbar-expand-lg bg-white fixed-top guest-navbar"
+>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="navbar-brand text-info text-muted"
+    to="/"
+  >
+    <i
+      className="fa fa-map-marker text-danger"
+    />
+     Spot Finder
+  </NavLink>
+  <button
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    className="navbar-toggler"
+    data-target="#navbarSupportedContent"
+    data-toggle="collapse"
+    type="button"
+  >
+    <span
+      className="fa fa-bars text-white"
+    />
+  </button>
+  <div
+    className="collapse navbar-collapse align-items-center"
+    id="navbarSupportedContent"
+  />
+</nav>
+`;
