@@ -1,9 +1,4 @@
 version: 2
-deployment:
-  production:
-    branch: master
-    heroku:
-      appname: roam-webchallenge
 
 jobs:
   build:
@@ -31,6 +26,13 @@ jobs:
             ./cc-test-reporter before-build
             npm test -- --coverage
             ./cc-test-reporter after-build --exit-code $?
+      deployment:
+        production:
+          branch: master
+          commands:
+            # ...removed lines for brevity
+            # Deploy the app to heroku
+            - git push https://git.heroku.com/roam-webchallenge.git $CIRCLE_SHA1:refs/heads/master
 
 
 

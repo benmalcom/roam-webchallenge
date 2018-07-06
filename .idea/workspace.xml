@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +25,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="276">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -185,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="23263000" />
+      <workItem from="1530878226160" duration="23579000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -335,7 +334,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23263000" />
+    <option name="totallyTimeSpent" value="23579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -346,11 +345,11 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32831326" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="right" id="Mongo Explorer" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33584338" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.33584338" />
       <window_info anchor="bottom" id="RNConsole" />
       <window_info anchor="right" id="Api Debugger" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="ReST Console" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -668,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="276">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
         </state>
       </provider>
     </entry>
