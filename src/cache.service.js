@@ -14,14 +14,13 @@ CacheService.prototype.setItemKey = function (key) {
 // Get an item by key
 CacheService.prototype.getItem = function () {
 	let obj = this.storage.getItem(this.key);
-	if(!obj) {
-		return null;
-	}
-	try{
-		obj = JSON.parse(obj);
-		return obj.item;
-	} catch (e) {
-		console.log('Parse error ', e.message);
+	if(obj) {
+		try{
+			obj = JSON.parse(obj);
+			return obj.item;
+		} catch (e) {
+			console.log('Parse error ', e.message);
+		}
 	}
 	return null;
 };
@@ -32,12 +31,6 @@ CacheService.prototype.store = function (item, duration = 300000) {
 	return this.storage.setItem(this.key, JSON.stringify(obj));
 };
 
-// Check if item is expired
-CacheService.prototype.expired = function () {
-	const item = this.getItem();
-    return Date.now() > item.expiration;
-};
-
 // Remove the current item
 CacheService.prototype.removeItem = function () {
 	this.storage.removeItem(this.key);
@@ -45,24 +38,18 @@ CacheService.prototype.removeItem = function () {
 
 // Remove every expired item
 CacheService.prototype.removeExpired = function() {
-	const keys = Object.keys(localStorage);
+	const keys = Object.keys(localStorage).filter((item,key) => item === 'location');
 	for(let key of keys) {
-		if(key === 'location') {
-			const json = localStorage.getItem(key);
-			if(json) {
-				try{
-					const item = JSON.parse(json);
-					if(item && item.expiration && (Date.now() > item.expiration)) {
-						localStorage.removeItem(key);
-					}
-				} catch (e) {
-					console.log('parse error ', e.message);
-				}
+		const json = localStorage.getItem(key);
+		try{
+			const item = JSON.parse(json);
+			if(item && item.expiration && (Date.now() > item.expiration)) {
+				localStorage.removeItem(key);
 			}
+		} catch (e) {
+			console.log('parse error ', e.message);
 		}
 	}
 };
 
 module.exports = CacheService;
-
-

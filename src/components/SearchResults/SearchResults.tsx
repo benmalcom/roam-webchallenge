@@ -2,10 +2,10 @@ import React, { Component, MouseEvent } from 'react';
 import './SearchResults.scss';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
-import { Link } from 'react-router-dom';
 import Loader from '../_App/partials/Loader/Loader';
 import Message from '../_App/partials/Message/Message';
 import Stop, { StopProps } from './Stop/Stop';
+import Header from './Header/Header';
 import { getStops } from '../../redux/actions/stop';
 import CacheService from '../../cache.service';
 import autobind from 'autobind-decorator';
@@ -81,19 +81,13 @@ class SearchResults extends Component<ComponentProps & any, any> {
 
 		return (<div className="row stops-list">
 			<div className="col-md-12 mb-3">
-				<h4 className="text-muted">
-					Search results &nbsp; &nbsp;
-					<Link to="/" className="btn btn-sm btn-outline-info text-sm text-right">
-						<i className="fa fa-arrow-left"/> Back to search</Link>
-				</h4>
+				<Header/>
 				<hr/>
-				{
-					pageInfo &&
+				{ pageInfo &&
 					<p className="col-md-12 mt-5">
 						{pageInfo.hasNextPage && <button onClick={this.getNextPage}
 														 className="btn btn-sm btn-outline-secondary">Next Page</button>}
-					</p>
-				}
+					</p> }
 			</div>
 			{tsx}
 		</div>);

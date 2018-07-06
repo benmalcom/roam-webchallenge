@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/__tests__/seed/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/reducers/ui.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/reducers/ui.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Header/Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchResults/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cache.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cache.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/stop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/stop.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +24,37 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="SearchResults.tsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-157">
+              <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchResults/Header/Header.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Header.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchResults/Header/Header.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,13 +91,16 @@
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/graphql/stop.tsx" />
-        <option value="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" />
         <option value="$PROJECT_DIR$/src/__tests__/seed/utils.js" />
         <option value="$PROJECT_DIR$/src/__tests__/seed/utils.ts" />
         <option value="$PROJECT_DIR$/src/__tests__/reducers/ui.test.tsx" />
         <option value="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" />
         <option value="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" />
         <option value="$PROJECT_DIR$/jest.config.js" />
+        <option value="$PROJECT_DIR$/src/cache.service.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchResults/Header/Header.scss" />
+        <option value="$PROJECT_DIR$/src/components/SearchResults/Header/Header.tsx" />
+        <option value="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" />
       </list>
     </option>
   </component>
@@ -122,13 +151,22 @@
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchResults" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchResults" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,11 +189,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/SearchResults" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/redux" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/__tests__" />
-      <recent name="$PROJECT_DIR$/src/components/Home" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -198,7 +236,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="15017000" />
+      <workItem from="1530878226160" duration="15791000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -348,10 +386,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15017000" />
+    <option name="totallyTimeSpent" value="15791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -584,16 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/reducers/ui.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -635,6 +664,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cache.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/Header/Header.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/Header/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
