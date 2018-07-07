@@ -7,7 +7,6 @@ import Message from '../_App/partials/Message/Message';
 import Stop, { StopProps } from './Stop/Stop';
 import Header from './Header/Header';
 import { getStops } from '../../redux/actions/stop';
-import CacheService from '../../cache.service';
 import autobind from 'autobind-decorator';
 import uuid from 'uuid/v1';
 
@@ -21,15 +20,8 @@ interface ComponentProps {
 }
 
 class SearchResults extends Component<ComponentProps & any, any> {
-	private cachedLocation;
-
 	constructor(props) {
 		super(props);
-		const cacheService = new CacheService('location');
-		// Removed expired location cache
-		cacheService.removeExpired();
-		// Get cached unexpired location
-		this.cachedLocation = cacheService.getItem();
 	}
 
 	componentDidMount() {
@@ -51,10 +43,8 @@ class SearchResults extends Component<ComponentProps & any, any> {
 	@autobind
 	getStops(cursor: (object | null) = null) {
 		const {location, getStops} = this.props;
-		const {cachedLocation} = this;
-		const $location = location || cachedLocation;
-		if ($location) {
-			const [long, lat] = $location;
+		if (location) {
+			const [long, lat] = location;
 			const obj = {lat, long};
 			if (cursor) {
 				Object.assign(obj, cursor);
@@ -65,13 +55,13 @@ class SearchResults extends Component<ComponentProps & any, any> {
 
 	render() {
 		const {location, stops, loading, pageInfo} = this.props;
-		const {cachedLocation, getRenderedStops} = this;
+		const {getRenderedStops} = this;
 		let tsx: any = null;
-		if (!(location || cachedLocation)) {
+		if (!location) {
 			tsx = <Message
 				message="Sorry we can't get your location information at this time"
 				error={true}/>;
-		} else if ((location || cachedLocation) && loading) {
+		} else if (location && loading) {
 			tsx = <Loader/>;
 		} else {
 				tsx = (stops && stops.length) ? getRenderedStops(stops) :

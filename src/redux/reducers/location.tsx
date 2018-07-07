@@ -1,5 +1,4 @@
 import { GET_LOCATION_SUCCESS, GET_LOCATION_FAILURE } from '../actions/location';
-const CacheService = require('../../cache.service');
 import { Action } from 'redux';
 
 interface LocationAction extends Action {
@@ -16,7 +15,7 @@ interface Location {
 		properties: object;
 		type: string;
 	}>;
-	geocoding: object;
+	geocoding: any;
 	type: string;
 }
 
@@ -26,9 +25,6 @@ const locationReducer = (state = {location: null, error: null}, action: Location
 			const {features} = action.payload as Location;
 			if (features && features.length) {
 				const {geometry: {coordinates}} = features[0];
-				if (typeof localStorage !== "undefined") {
-					new CacheService('location').store(coordinates);
-				}
 				return Object.assign({}, state, {location: coordinates});
 			}
 			return state;
