@@ -36,8 +36,8 @@ class Home extends Component<ComponentProps, any> {
 		const {loading} = this.props;
 		const {inputValue} = this.state;
 		return (<div className="container-fluid top">
-			<div className="row">
-				<div className="col-md-7 mx-auto col-12 text-center">
+			<div className="row col-12 col-sm-8 col-md-7 col-lg-7 mx-auto">
+				<div className="text-center">
 					<h4><strong>Find favourite spots in Helsinki</strong></h4>
 					<p className="text-muted">Enter a location in Helsinki and it should show you the nearest
 						amenities (stops, bike rentals, bike parking, and car parking)</p>

@@ -69,7 +69,7 @@ class SearchResults extends Component<ComponentProps & any, any> {
 		}
 
 		return (<div className="row stops-list">
-			<div className="col-md-12 mb-3">
+			<div className="col-12 col-sm-12 col-md-12 mb-3">
 				<Header/>
 				{ (pageInfo && pageInfo. hasNextPage) && <p className="col-md-12 mt-5">
 					<button onClick={this.getNextPage}

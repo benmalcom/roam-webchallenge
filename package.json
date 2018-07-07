@@ -6,6 +6,7 @@
   "scripts": {
     "prestart": "npm run build",
     "build": "webpack",
+    "dev": "webpack-dev-server --mode development",
     "start": "node server",
     "test": "jest -u",
     "test:watch": "jest -u --watchAll"
