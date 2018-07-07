@@ -67,7 +67,7 @@ class SearchResults extends Component<ComponentProps & any, any> {
 		const {location, stops, loading, pageInfo} = this.props;
 		const {cachedLocation, getRenderedStops} = this;
 		let tsx: any = null;
-		if (!(location && cachedLocation)) {
+		if (!(location || cachedLocation)) {
 			tsx = <Message
 				message="Sorry we can't get your location information at this time"
 				error={true}/>;
