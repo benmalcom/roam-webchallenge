@@ -14,7 +14,6 @@ const stopReducer = (state = {stops: null, error: null }, action: StopAction) =>
 					id: gtfsId, name, desc, distance,
 				};
 			});
-			console.log('pageInfo ', pageInfo);
 			return Object.assign({}, state, { stops, pageInfo  });
 		case GET_STOPS_FAILURE:
 			return Object.assign({}, state, { error: action.payload });

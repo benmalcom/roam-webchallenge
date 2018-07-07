@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="" />
+    <list default="true" id="ba029b57-519c-4570-b5fd-b83dbcce1ad6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,11 +22,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="cache.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cache.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state relative-caret-position="188">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchResults.tsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,12 +89,12 @@
         <option value="$PROJECT_DIR$/src/__tests__/reducers/stop.test.tsx" />
         <option value="$PROJECT_DIR$/src/__tests__/reducers/location.test.tsx" />
         <option value="$PROJECT_DIR$/src/cache.service.js" />
-        <option value="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/src/redux/reducers/location.tsx" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx" />
       </list>
     </option>
   </component>
@@ -123,7 +140,14 @@
               <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="roam-webchallenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="roam-webchallenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchResults" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,7 +217,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530878223804</updated>
-      <workItem from="1530878226160" duration="25590000" />
+      <workItem from="1530878226160" duration="25995000" />
     </task>
     <task id="LOCAL-00001" summary="Package.json&#10;Created package.json file and installed necessary project dependencies with scripts setup">
       <created>1530880761148</created>
@@ -343,7 +367,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25590000" />
+    <option name="totallyTimeSpent" value="25995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -615,26 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cache.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -677,6 +681,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cache.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchResults/SearchResults.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
